@@ -11,3 +11,10 @@ capabilities:
   site:
     mediaTypes:
       - banner
+userSync:
+  iframe:
+    url: https://ib.adnxs.com/getuid?{{.ExternalURL}}?xandrId=$UID&gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&f={{.SyncType}}
+    userMacro: $UID
+  redirect:
+    url: https://ib.adnxs.com/getuid?{{.ExternalURL}}?xandrId=$UID&gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&f={{.SyncType}}
+    userMacro: $UID

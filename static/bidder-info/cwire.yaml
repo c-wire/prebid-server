@@ -13,8 +13,8 @@ capabilities:
       - banner
 userSync:
   iframe:
-    url: https://ib.adnxs.com/getuid?{{.ExternalURL}}?xandrId=$UID&gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&f={{.SyncType}}
+    url: https://prebid.cwi.re/v1/usersync?gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&redirect={{.RedirectURL}}
     userMacro: $UID
   redirect:
-    url: https://ib.adnxs.com/getuid?{{.ExternalURL}}?xandrId=$UID&gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&f={{.SyncType}}
+    url: https://prebid.cwi.re/v1/usersync?gdpr={{.GDPR}}&gdpr_consent={{.GDPRConsent}}&redirect={{.RedirectURL}}
     userMacro: $UID
